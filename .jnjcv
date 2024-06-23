@@ -1,0 +1,374 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Background = Instance.new("Frame")
+local Credits = Instance.new("TextLabel")
+local UI = Instance.new("Frame")
+local UITOGGLE = Instance.new("TextButton")
+local DELETE = Instance.new("Frame")
+local DELETETOGGLE = Instance.new("TextButton")
+local HIDEOPTIONS = Instance.new("Frame")
+local HIDEOPTIONS_2 = Instance.new("TextButton")
+local FRAME = Instance.new("Frame")
+local SHOWOPTIONS = Instance.new("Frame")
+local HIDEOPTIONS_3 = Instance.new("TextButton")
+local GUI = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local GUIMainTextLabel = Instance.new("TextLabel")
+local GUIScriptTextButton = Instance.new("TextButton")
+local GUIScript2TextButton = Instance.new("TextButton")
+local GUIScript3TextButton = Instance.new("TextButton")
+local GUIScript4TextButton = Instance.new("TextButton")
+local GUIScript5TextButton = Instance.new("TextButton")
+local GUIPanelsTextLabel = Instance.new("TextLabel")
+local GUIPanelsTextButton = Instance.new("TextButton")
+local GUIPanel2TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 0.500
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0721420646, 0, 0.37621358, 0)
+Frame.Selectable = true
+Frame.Size = UDim2.new(0, 225, 0, 131)
+
+Background.Name = "Background"
+Background.Parent = Frame
+Background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Background.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Background.BorderSizePixel = 0
+Background.Position = UDim2.new(0.0700092241, 0, 0.846546531, 0)
+Background.Size = UDim2.new(0, 193, 0, 4)
+
+Credits.Name = "Credits"
+Credits.Parent = Background
+Credits.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(-0.046632126, 0, -3.93254089, 0)
+Credits.Size = UDim2.new(0, 208, 0, 34)
+Credits.Font = Enum.Font.SourceSansBold
+Credits.Text = "By:UlyssesnezGaming"
+Credits.TextColor3 = Color3.fromRGB(42, 226, 14)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextStrokeColor3 = Color3.fromRGB(0, 0, 255)
+Credits.TextWrapped = true
+
+UI.Name = "UI"
+UI.Parent = Frame
+UI.BackgroundColor3 = Color3.fromRGB(179, 255, 1)
+UI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UI.BorderSizePixel = 0
+UI.Position = UDim2.new(0.0664002448, 0, 0.0357915051, 0)
+UI.Size = UDim2.new(0, 193, 0, 36)
+
+UITOGGLE.Name = "UITOGGLE"
+UITOGGLE.Parent = UI
+UITOGGLE.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UITOGGLE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UITOGGLE.BorderSizePixel = 0
+UITOGGLE.Position = UDim2.new(0, 0, 0.055555556, 0)
+UITOGGLE.Size = UDim2.new(0, 200, 0, 32)
+UITOGGLE.Font = Enum.Font.SourceSansBold
+UITOGGLE.Text = "UITOG"
+UITOGGLE.TextColor3 = Color3.fromRGB(77, 255, 0)
+UITOGGLE.TextScaled = true
+UITOGGLE.TextSize = 14.000
+UITOGGLE.TextWrapped = true
+
+DELETE.Name = "DELETE"
+DELETE.Parent = Frame
+DELETE.BackgroundColor3 = Color3.fromRGB(179, 255, 1)
+DELETE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DELETE.BorderSizePixel = 0
+DELETE.Position = UDim2.new(0.0797336176, 0, 0.253408074, 0)
+DELETE.Size = UDim2.new(0, 193, 0, 36)
+
+DELETETOGGLE.Name = "DELETETOGGLE"
+DELETETOGGLE.Parent = DELETE
+DELETETOGGLE.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DELETETOGGLE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DELETETOGGLE.BorderSizePixel = 0
+DELETETOGGLE.Position = UDim2.new(-0.0155440411, 0, -0.0277773533, 0)
+DELETETOGGLE.Size = UDim2.new(0, 200, 0, 32)
+DELETETOGGLE.Font = Enum.Font.SourceSansBold
+DELETETOGGLE.Text = "DELETE ALL"
+DELETETOGGLE.TextColor3 = Color3.fromRGB(77, 255, 0)
+DELETETOGGLE.TextScaled = true
+DELETETOGGLE.TextSize = 14.000
+DELETETOGGLE.TextWrapped = true
+
+HIDEOPTIONS.Name = "HIDEOPTIONS"
+HIDEOPTIONS.Parent = Frame
+HIDEOPTIONS.BackgroundColor3 = Color3.fromRGB(179, 255, 1)
+HIDEOPTIONS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HIDEOPTIONS.BorderSizePixel = 0
+HIDEOPTIONS.Position = UDim2.new(0.0797336176, 0, 0.507294178, 0)
+HIDEOPTIONS.Size = UDim2.new(0, 193, 0, 36)
+
+HIDEOPTIONS_2.Name = "HIDE OPTIONS"
+HIDEOPTIONS_2.Parent = HIDEOPTIONS
+HIDEOPTIONS_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HIDEOPTIONS_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HIDEOPTIONS_2.BorderSizePixel = 0
+HIDEOPTIONS_2.Position = UDim2.new(-0.0310880821, 0, 0, 0)
+HIDEOPTIONS_2.Size = UDim2.new(0, 200, 0, 32)
+HIDEOPTIONS_2.Font = Enum.Font.SourceSansBold
+HIDEOPTIONS_2.Text = "HIDEOPTION"
+HIDEOPTIONS_2.TextColor3 = Color3.fromRGB(77, 255, 0)
+HIDEOPTIONS_2.TextScaled = true
+HIDEOPTIONS_2.TextSize = 14.000
+HIDEOPTIONS_2.TextWrapped = true
+
+FRAME.Name = "FRAME"
+FRAME.Parent = ScreenGui
+FRAME.Active = true
+FRAME.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FRAME.BackgroundTransparency = 0.900
+FRAME.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FRAME.BorderSizePixel = 0
+FRAME.Position = UDim2.new(0.0721420646, 0, 0.37621358, 0)
+FRAME.Selectable = true
+FRAME.Size = UDim2.new(0, 225, 0, 33)
+FRAME.Visible = false
+
+SHOWOPTIONS.Name = "SHOWOPTIONS"
+SHOWOPTIONS.Parent = FRAME
+SHOWOPTIONS.BackgroundColor3 = Color3.fromRGB(179, 255, 1)
+SHOWOPTIONS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SHOWOPTIONS.BorderSizePixel = 0
+SHOWOPTIONS.Position = UDim2.new(0.0797336176, 0, -0.0940560997, 0)
+SHOWOPTIONS.Size = UDim2.new(0, 193, 0, 36)
+
+HIDEOPTIONS_3.Name = "HIDE OPTIONS"
+HIDEOPTIONS_3.Parent = SHOWOPTIONS
+HIDEOPTIONS_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HIDEOPTIONS_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HIDEOPTIONS_3.BorderSizePixel = 0
+HIDEOPTIONS_3.Position = UDim2.new(0, 0, 0.055555556, 0)
+HIDEOPTIONS_3.Size = UDim2.new(0, 200, 0, 32)
+HIDEOPTIONS_3.Font = Enum.Font.SourceSansBold
+HIDEOPTIONS_3.Text = "SHOWOPTIONS"
+HIDEOPTIONS_3.TextColor3 = Color3.fromRGB(77, 255, 0)
+HIDEOPTIONS_3.TextScaled = true
+HIDEOPTIONS_3.TextSize = 14.000
+HIDEOPTIONS_3.TextWrapped = true
+
+GUI.Name = "GUI"
+GUI.Parent = ScreenGui
+GUI.Active = true
+GUI.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUI.BorderSizePixel = 0
+GUI.Position = UDim2.new(0, 279, 0, 60)
+GUI.Size = UDim2.new(0, 576, 0, 271)
+
+Frame_2.Parent = GUI
+Frame_2.BackgroundColor3 = Color3.fromRGB(14, 255, 42)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.LayoutOrder = 2
+Frame_2.Position = UDim2.new(0.0236159433, 0, 0.0457599275, 0)
+Frame_2.Size = UDim2.new(0, 548, 0, 245)
+
+ScrollingFrame.Parent = Frame_2
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Size = UDim2.new(0, 285, 0, 299)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2, 3)
+
+GUIMainTextLabel.Name = "GUIMainTextLabel"
+GUIMainTextLabel.Parent = ScrollingFrame
+GUIMainTextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUIMainTextLabel.BackgroundTransparency = 1.000
+GUIMainTextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUIMainTextLabel.BorderSizePixel = 0
+GUIMainTextLabel.Position = UDim2.new(0.332456142, 0, -0.00101090758, 0)
+GUIMainTextLabel.Size = UDim2.new(0, 70, 0, 23)
+GUIMainTextLabel.Font = Enum.Font.SourceSansBold
+GUIMainTextLabel.Text = "MAIN"
+GUIMainTextLabel.TextColor3 = Color3.fromRGB(28, 255, 47)
+GUIMainTextLabel.TextScaled = true
+GUIMainTextLabel.TextSize = 14.000
+GUIMainTextLabel.TextStrokeTransparency = 0.000
+GUIMainTextLabel.TextWrapped = true
+
+GUIScriptTextButton.Name = "GUIScriptTextButton"
+GUIScriptTextButton.Parent = GUIMainTextLabel
+GUIScriptTextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUIScriptTextButton.BackgroundTransparency = 1.000
+GUIScriptTextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUIScriptTextButton.BorderSizePixel = 0
+GUIScriptTextButton.Position = UDim2.new(-1.21428573, 0, 0.979237437, 0)
+GUIScriptTextButton.Size = UDim2.new(0, 54, 0, 29)
+GUIScriptTextButton.Font = Enum.Font.SourceSansBold
+GUIScriptTextButton.Text = "Walk On Walls Script"
+GUIScriptTextButton.TextColor3 = Color3.fromRGB(1, 0, 0)
+GUIScriptTextButton.TextScaled = true
+GUIScriptTextButton.TextSize = 14.000
+GUIScriptTextButton.TextStrokeColor3 = Color3.fromRGB(0, 255, 42)
+GUIScriptTextButton.TextStrokeTransparency = 0.000
+GUIScriptTextButton.TextWrapped = true
+
+GUIScript2TextButton.Name = "GUIScript2TextButton"
+GUIScript2TextButton.Parent = GUIMainTextLabel
+GUIScript2TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUIScript2TextButton.BackgroundTransparency = 1.000
+GUIScript2TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUIScript2TextButton.BorderSizePixel = 0
+GUIScript2TextButton.Position = UDim2.new(-0.285714298, 0, 0.979237437, 0)
+GUIScript2TextButton.Size = UDim2.new(0, 39, 0, 29)
+GUIScript2TextButton.Font = Enum.Font.SourceSansBold
+GUIScript2TextButton.Text = "Fly Script"
+GUIScript2TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUIScript2TextButton.TextScaled = true
+GUIScript2TextButton.TextSize = 14.000
+GUIScript2TextButton.TextStrokeColor3 = Color3.fromRGB(22, 255, 10)
+GUIScript2TextButton.TextStrokeTransparency = 0.000
+GUIScript2TextButton.TextWrapped = true
+
+GUIScript3TextButton.Name = "GUIScript3TextButton"
+GUIScript3TextButton.Parent = GUIMainTextLabel
+GUIScript3TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUIScript3TextButton.BackgroundTransparency = 1.000
+GUIScript3TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUIScript3TextButton.BorderSizePixel = 0
+GUIScript3TextButton.Position = UDim2.new(0.357142866, 0, 0.979237437, 0)
+GUIScript3TextButton.Size = UDim2.new(0, 39, 0, 29)
+GUIScript3TextButton.Font = Enum.Font.SourceSansBold
+GUIScript3TextButton.Text = "Noclip Script"
+GUIScript3TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUIScript3TextButton.TextScaled = true
+GUIScript3TextButton.TextSize = 14.000
+GUIScript3TextButton.TextStrokeColor3 = Color3.fromRGB(22, 255, 10)
+GUIScript3TextButton.TextStrokeTransparency = 0.000
+GUIScript3TextButton.TextWrapped = true
+
+GUIScript4TextButton.Name = "GUIScript4TextButton"
+GUIScript4TextButton.Parent = GUIMainTextLabel
+GUIScript4TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUIScript4TextButton.BackgroundTransparency = 1.000
+GUIScript4TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUIScript4TextButton.BorderSizePixel = 0
+GUIScript4TextButton.Position = UDim2.new(1, 0, 0.979237437, 0)
+GUIScript4TextButton.Size = UDim2.new(0, 39, 0, 29)
+GUIScript4TextButton.Font = Enum.Font.SourceSansBold
+GUIScript4TextButton.Text = "Esp Script"
+GUIScript4TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUIScript4TextButton.TextScaled = true
+GUIScript4TextButton.TextSize = 14.000
+GUIScript4TextButton.TextStrokeColor3 = Color3.fromRGB(22, 255, 10)
+GUIScript4TextButton.TextStrokeTransparency = 0.000
+GUIScript4TextButton.TextWrapped = true
+
+GUIScript5TextButton.Name = "GUIScript5TextButton"
+GUIScript5TextButton.Parent = GUIMainTextLabel
+GUIScript5TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUIScript5TextButton.BackgroundTransparency = 1.000
+GUIScript5TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUIScript5TextButton.BorderSizePixel = 0
+GUIScript5TextButton.Position = UDim2.new(1.64285719, 0, 0.979237437, 0)
+GUIScript5TextButton.Size = UDim2.new(0, 39, 0, 29)
+GUIScript5TextButton.Font = Enum.Font.SourceSansBold
+GUIScript5TextButton.Text = "Bang Script"
+GUIScript5TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUIScript5TextButton.TextScaled = true
+GUIScript5TextButton.TextSize = 14.000
+GUIScript5TextButton.TextStrokeColor3 = Color3.fromRGB(22, 255, 10)
+GUIScript5TextButton.TextStrokeTransparency = 0.000
+GUIScript5TextButton.TextWrapped = true
+
+GUIPanelsTextLabel.Name = "GUIPanelsTextLabel"
+GUIPanelsTextLabel.Parent = ScrollingFrame
+GUIPanelsTextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUIPanelsTextLabel.BackgroundTransparency = 1.000
+GUIPanelsTextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUIPanelsTextLabel.BorderSizePixel = 0
+GUIPanelsTextLabel.Position = UDim2.new(0.3640351, 0, 0.785580039, 0)
+GUIPanelsTextLabel.Size = UDim2.new(0, 70, 0, 23)
+GUIPanelsTextLabel.Font = Enum.Font.SourceSansBold
+GUIPanelsTextLabel.Text = "Panels"
+GUIPanelsTextLabel.TextColor3 = Color3.fromRGB(28, 255, 47)
+GUIPanelsTextLabel.TextScaled = true
+GUIPanelsTextLabel.TextSize = 14.000
+GUIPanelsTextLabel.TextStrokeTransparency = 0.000
+GUIPanelsTextLabel.TextWrapped = true
+
+GUIPanelsTextButton.Name = "GUIPanelsTextButton"
+GUIPanelsTextButton.Parent = GUIPanelsTextLabel
+GUIPanelsTextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUIPanelsTextButton.BackgroundTransparency = 1.000
+GUIPanelsTextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUIPanelsTextButton.BorderSizePixel = 0
+GUIPanelsTextButton.Position = UDim2.new(-0.271428585, 0, 0.979237437, 0)
+GUIPanelsTextButton.Size = UDim2.new(0, 54, 0, 29)
+GUIPanelsTextButton.Font = Enum.Font.SourceSansBold
+GUIPanelsTextButton.Text = "infinite yield"
+GUIPanelsTextButton.TextColor3 = Color3.fromRGB(1, 0, 0)
+GUIPanelsTextButton.TextScaled = true
+GUIPanelsTextButton.TextSize = 14.000
+GUIPanelsTextButton.TextStrokeColor3 = Color3.fromRGB(0, 255, 42)
+GUIPanelsTextButton.TextStrokeTransparency = 0.000
+GUIPanelsTextButton.TextWrapped = true
+
+GUIPanel2TextButton.Name = "GUIPanel2TextButton"
+GUIPanel2TextButton.Parent = GUIPanelsTextLabel
+GUIPanel2TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUIPanel2TextButton.BackgroundTransparency = 1.000
+GUIPanel2TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUIPanel2TextButton.BorderSizePixel = 0
+GUIPanel2TextButton.Position = UDim2.new(0.814285696, 0, 0.979237437, 0)
+GUIPanel2TextButton.Size = UDim2.new(0, 39, 0, 29)
+GUIPanel2TextButton.Font = Enum.Font.SourceSansBold
+GUIPanel2TextButton.Text = "Nameless Admin"
+GUIPanel2TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUIPanel2TextButton.TextScaled = true
+GUIPanel2TextButton.TextSize = 14.000
+GUIPanel2TextButton.TextStrokeColor3 = Color3.fromRGB(22, 255, 10)
+GUIPanel2TextButton.TextStrokeTransparency = 0.000
+GUIPanel2TextButton.TextWrapped = true
+
+-- Scripts:
+
+local function CQRQBD_fake_script() -- GUI.LocalScript 
+	local script = Instance.new('LocalScript', GUI)
+
+	local GUI = script.Parent.Parent.GUI
+	local hotkey = Enum.KeyCode.K
+	
+	local UIS = game:GetService("UserInputService")
+	local open = false
+	
+	
+	
+	UIS.InputBegan:Connect(function(key, gp)
+		if key.KeyCode == hotkey then
+			if UIS:GetFocusedTextBox() == nil then
+				if open == false then
+					open = true
+					GUI.Visible = open
+				elseif open == true then
+					open = false
+					GUI.Visible = open
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(CQRQBD_fake_script)()
